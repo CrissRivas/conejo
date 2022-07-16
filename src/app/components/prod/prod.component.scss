@@ -5,3 +5,10 @@ h1 {
     color: var(--G-5);
     text-shadow: 2px 2px var(--G-3);
 }
+
+.container-prod {
+    display: grid;
+    grid-template-columns: 100px 1fr 30px;
+    height: 100%;
+    width: 100%;
+}
