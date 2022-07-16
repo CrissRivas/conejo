@@ -1,0 +1,53 @@
+<menu>
+    <section>
+
+        <button mat-icon-button aria-label="Menu cool" class="menu-button" (click)="toggleMnu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+    </section>
+    <section></section>
+</menu>
+
+<div class="menu-phone" [class.active]="activeMenu">
+    <section>
+        <div class="menu-phone-container">
+
+            <section>
+                <!-- close button -->
+                <section>
+                    <button mat-icon-button aria-label="Menu cool" class="menu-button" (click)="toggleMnu()">
+                <mat-icon>menu</mat-icon>
+              </button>
+                </section>
+                <!-- close button -->
+                <!-- Logo -->
+                <section>
+                </section>
+                <!-- Logo -->
+            </section>
+
+            <section class="menu-phone-buttons">
+                <!-- UX -->
+                <button class="button"> UX </button>
+                <!-- UI -->
+                <button class="button select"> UI </button>
+                <!-- Frontend -->
+                <button class="button"> Fronend </button>
+                <!-- Backend -->
+                <button class="button"> Backend </button>
+                <!-- Prod -->
+                <button class="button"> Production </button>
+                <!-- Strengths -->
+                <button class="button"> Strengths </button>
+                <!-- More -->
+                <button class="button"> More </button>
+            </section>
+            <section>
+                <!-- Social networks -->
+            </section>
+        </div>
+    </section>
+    <section>
+        <div class="menu-phone-space" (click)="toggleMnu()"></div>
+    </section>
+</div>

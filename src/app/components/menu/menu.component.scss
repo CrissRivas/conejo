@@ -1,0 +1,65 @@
+menu {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    height: 40px;
+    width: 100%;
+    justify-items: center;
+}
+
+.menu-button {
+    color: var(--G-4);
+}
+
+.menu-phone {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    transform: translateX(-100%);
+    transition: 1000ms;
+}
+
+.active {
+    transform: translateX(0%);
+}
+
+.menu-phone-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 40px 1fr 40px;
+    background-color: var(--G-2);
+    border: 3px solid var(--G-4);
+}
+
+.menu-phone-space {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-phone-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-phone-buttons .button {
+    border: none;
+    padding: 20px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: var(--G-2);
+    color: var(--G-3);
+    text-shadow: 2px 2px var(--G-1);
+}
+
+.menu-phone-buttons .select {
+    color: var(--G-5);
+    border-bottom: 3px solid var(--G-4);
+    border-top: 3px solid var(--G-4);
+    background-color: var(--G-3);
+    text-shadow: 2px 2px var(--G-2);
+}
