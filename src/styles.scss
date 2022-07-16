@@ -62,9 +62,22 @@ body {
 
 p {
     font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--G-5);
+    text-shadow: 2px 2px var(--G-3);
 }
 
 .swiper-pagination-bullet {
     border-radius: 0px;
+    background-color: var(--G-5);
     box-shadow: 2px 2px var(--G-3);
 }
