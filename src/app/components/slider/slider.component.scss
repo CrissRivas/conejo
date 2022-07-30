@@ -4,3 +4,55 @@
     color: black;
     --swiper-theme-color: #000000;
 }
+
+.slide-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 100px 1fr 30px;
+    justify-content: center;
+}
+
+.slider-grid-container {
+    position: relative;
+}
+
+.slider-grid-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ux {
+    font-size: 7rem;
+}
+
+.frontend {
+    font-size: 4rem;
+}
+
+.prod {
+    font-size: 3rem;
+}
+
+.slide-grid-more {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 170px 1fr 30px;
+    justify-content: center;
+}
+
+.more {
+    font-size: 3rem;
+    margin-top: 45px;
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+@media screen and (min-width: 40em) {
+    .slider-grid-container {
+        position: relative;
+        width: 800px;
+    }
+}

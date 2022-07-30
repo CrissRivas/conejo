@@ -23,6 +23,8 @@ import { SwiperModule } from 'swiper/angular';
 import {MatCardModule} from '@angular/material/card';
 import { MenuComponent } from './components/menu/menu.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { UiSliderComponent } from './components/ui-slider/ui-slider.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { SliderComponent } from './components/slider/slider.component';
     ProdComponent,
     MoreComponent,
     MenuComponent,
-    SliderComponent
+    SliderComponent,
+    ContactComponent,
+    UiSliderComponent
   ],
   imports: [
     BrowserModule,

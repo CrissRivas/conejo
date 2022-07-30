@@ -1,27 +1,111 @@
-<swiper class="banner" [loop]="true" [slidesPerView]="1" [spaceBetween]="50" [pagination]="{ clickable: true }">
+<swiper class="swiper banner" [mousewheel]="true" [loop]="true" [slidesPerView]="1" [spaceBetween]="50" [pagination]="{ clickable: true}" [direction]="directionSlider">
 
     <ng-template swiperSlide class="swiper-slide">
-        <app-intro></app-intro>
+        <div class="slide-grid">
+            <section></section>
+            <section class="slider-grid-container">
+                <app-intro></app-intro>
+            </section>
+            <section></section>
+        </div>
+
     </ng-template>
     <ng-template swiperSlide class="swiper-slide">
-        <app-ux></app-ux>
+        <div class="slide-grid">
+            <section class="slider-grid-title">
+                <p class="ux">UX</p>
+            </section>
+            <section class="slider-grid-container">
+                <app-ux></app-ux>
+            </section>
+            <section></section>
+        </div>
+
     </ng-template>
     <ng-template swiperSlide class="swiper-slide">
-        <app-ui></app-ui>
+        <div class="slide-grid">
+            <section class="slider-grid-title">
+                <p class="ux">UI</p>
+            </section>
+            <section class="slider-grid-container">
+                <app-ui></app-ui>
+                <app-ui-slider></app-ui-slider>
+            </section>
+            <section></section>
+        </div>
+
     </ng-template>
     <ng-template swiperSlide class="swiper-slide">
-        <app-frontend></app-frontend>
+        <div class="slide-grid">
+            <section class="slider-grid-title">
+                <p class="frontend">Frontend</p>
+            </section>
+            <section class="slider-grid-container">
+                <app-frontend></app-frontend>
+            </section>
+            <section></section>
+        </div>
+
     </ng-template>
     <ng-template swiperSlide class="swiper-slide">
-        <app-backend></app-backend>
+        <div class="slide-grid">
+            <section class="slider-grid-title">
+                <p class="frontend">Backend</p>
+            </section>
+            <section class="slider-grid-container">
+                <app-backend></app-backend>
+            </section>
+            <section></section>
+        </div>
+
     </ng-template>
     <ng-template swiperSlide class="swiper-slide">
-        <app-prod></app-prod>
+        <div class="slide-grid">
+            <section class="slider-grid-title">
+                <p class="prod">Production</p>
+            </section>
+            <section class="slider-grid-container">
+                <app-prod></app-prod>
+            </section>
+            <section></section>
+        </div>
+
     </ng-template>
     <ng-template swiperSlide class="swiper-slide">
-        <app-strengths></app-strengths>
+        <div class="slide-grid">
+            <section class="slider-grid-title">
+                <p class="prod">Strengths</p>
+            </section>
+            <section class="slider-grid-container">
+                <app-strengths></app-strengths>
+            </section>
+            <section></section>
+        </div>
+
+    </ng-template>
+
+    <ng-template swiperSlide class="swiper-slide">
+        <div class="slide-grid-more">
+            <section class="slider-grid-title">
+                <p class="more">And one more thing!</p>
+            </section>
+            <section class="slider-grid-container">
+                <app-more></app-more>
+            </section>
+            <section></section>
+        </div>
     </ng-template>
     <ng-template swiperSlide class="swiper-slide">
-        <app-more></app-more>
+        <div class="slide-grid-more">
+            <section class="slider-grid-title">
+                <p class="more">Go!</p>
+            </section>
+            <section class="slider-grid-container">
+                <app-contact></app-contact>
+            </section>
+            <section></section>
+        </div>
     </ng-template>
+
+    <div class="swiper-pagination"></div>
 </swiper>

@@ -1,0 +1,27 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-ui-slider',
+  templateUrl: './ui-slider.component.html',
+  styleUrls: ['./ui-slider.component.scss']
+})
+export class UiSliderComponent implements OnInit {
+
+  public conejoButton:boolean=false;
+  public Gubs:boolean=false;
+  public weed:boolean=false;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  tgglCnjo():void{
+    this.conejoButton=!this.conejoButton;
+  }
+  tgglGubs():void{
+    this.Gubs=!this.Gubs;
+  }
+  tgglWeed():void{
+    this.weed=!this.weed;
+  }
+
+}

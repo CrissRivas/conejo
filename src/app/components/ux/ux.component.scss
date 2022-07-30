@@ -1,26 +1,10 @@
 h1 {
-    margin-top: 20px;
-    font-size: 10em;
-    text-align: center;
-    color: var(--G-5);
-    text-shadow: 2px 2px var(--G-3);
-}
-
-h3 {
     margin-top: 10px;
-    font-size: 2em;
     text-align: center;
-    color: var(--G-5);
-    text-shadow: 2px 2px var(--G-3);
 }
 
 p {
     margin-top: 10px;
-    line-height: 1.8em;
-    font-size: 1.6em;
-    color: var(--G-5);
-    margin: 0px 10px;
-    text-shadow: 2px 2px var(--G-3);
 }
 
 .design-thinking {
@@ -48,8 +32,9 @@ p {
 }
 
 .container-ux {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 100px 1fr 1fr 1fr 30px;
+    justify-content: space-evenly;
+    padding: 10px;
 }

@@ -1,7 +1,52 @@
-h1 {
+.more-banner {
+    font-size: 3rem;
     margin-top: 45px;
-    font-size: 5em;
     text-align: center;
-    color: var(--G-5);
-    text-shadow: 2px 2px var(--G-3);
+}
+
+.learning {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-more {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    position: absolute;
+}
+
+.frame {
+    overflow: hidden;
+    position: relative;
+}
+
+.reel {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.reel::-webkit-scrollbar {
+    display: none;
+}
+
+.text {
+    height: max-content;
+}
+
+.course {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    min-height: 100px;
+    max-height: 170px;
+    border: 3px solid var(--G-5);
+    margin-top: 20px;
+    padding: 10px;
+    overflow-wrap: break-word;
 }

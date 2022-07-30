@@ -1,1 +1,23 @@
-<h1>And one <br> more thing! </h1>
+<div class="container-more">
+
+    <section class="frame">
+        <div class="reel">
+            <div class=" text">
+                <h1 class="learning">
+                    Learning <br> & <br> Exploring
+                </h1>
+
+                <p>Passion for learning new skills and develop awsome software, all in diferents fields. <br> &nbsp;<br> My favorite plataform to learn is Platzi, currently i've 46 cetificed couses and more than 10,500 points. <br> &nbsp;<br>My aproved couses:</p>
+                <div class="course" *ngFor="let couse of courses; index as i">
+                    <section>
+                        <h1>#{{i}}</h1>
+                    </section>
+                    <section>
+                        <p>{{couse}}</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>

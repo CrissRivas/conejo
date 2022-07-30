@@ -1,6 +1,8 @@
-<section class="frame">
-    <div class="reel">
-        <!-- conejo-cyberpunk -->
+<swiper class="swiper banner" [loop]="true" [slidesPerView]="2" [spaceBetween]="50">
+
+    <!-- conejo-cyberpunk -->
+    <ng-template swiperSlide class="swiper-slide">
+
         <div class="page" [class.page-bar-button]="conejoButton">
             <div class="bar">
                 <section></section>
@@ -24,14 +26,18 @@
                     </div>
                     <section>
                         <button class="page-info-arrow" (click)="tgglCnjo()" [class.page-info-up-arrow]="conejoButton">
-                             >
-                          </button>
+                   >
+                </button>
                     </section>
                 </div>
             </div>
         </div>
-        <!-- conejo-cyberpunk -->
-        <!-- Gubs -->
+    </ng-template>
+    <!-- conejo-cyberpunk -->
+
+    <!-- Gubs -->
+    <ng-template swiperSlide class="swiper-slide">
+
         <div class="page" [class.page-bar-button]="Gubs">
             <div class="bar">
                 <section></section>
@@ -55,14 +61,18 @@
                     </div>
                     <section>
                         <button class="page-info-arrow" (click)="tgglGubs()" [class.page-info-up-arrow]="Gubs">
-                           >
-                        </button>
+                 >
+              </button>
                     </section>
                 </div>
             </div>
         </div>
-        <!-- Gubs -->
-        <!-- Weedtopia -->
+    </ng-template>
+    <!-- Gubs -->
+    <!-- Weedtopia -->
+
+    <ng-template swiperSlide class="swiper-slide">
+
         <div class="page" [class.page-bar-button]="weed">
             <div class="bar">
                 <section></section>
@@ -86,12 +96,13 @@
                     </div>
                     <section>
                         <button class="page-info-arrow" (click)="tgglWeed()" [class.page-info-up-arrow]="weed">
-                         >
-                      </button>
+               >
+            </button>
                     </section>
                 </div>
             </div>
         </div>
-        <!-- Weedtopia -->
-    </div>
-</section>
+    </ng-template>
+    <!-- Weedtopia -->
+    <div class="swiper-pagination"></div>
+</swiper>

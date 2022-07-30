@@ -1,11 +1,177 @@
-.img-profile {
-    height: 70%;
+.container-intro {
+    height: 100%;
     width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2rem;
     color: var(--G-5);
     text-shadow: 2px 2px var(--G-3);
-    text-align: center;
+}
+
+.profile {
+    height: 200px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.boy {
+    height: 160px;
+    width: 160px;
+    position: relative;
+}
+
+.boy-img {
+    height: 160px;
+    width: 160px;
+    left: -10px;
+    position: absolute;
+    animation: rice 2s linear forwards;
+}
+
+.text {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-name {
+    width: 200px;
+    height: 50px;
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    animation: fall 2s linear forwards;
+}
+
+.swipe-frame {
+    height: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.swipe {
+    position: absolute;
+    height: 50px;
+    opacity: 0;
+    animation: swipe 2s linear 5s forwards;
+}
+
+.scroll {
+    display: none;
+}
+
+@keyframes swipe {
+    0% {
+        opacity: 0;
+        right: 20%;
+        transform: rotate(45deg);
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        right: 50%;
+    }
+    90% {
+        right: 80%;
+        transform: rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rice {
+    from {
+        top: 100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes fall {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 40em) {
+    .swipe {
+        display: none;
+    }
+    .scroll {
+        position: absolute;
+        height: 50px;
+        transform: rotate(180deg);
+        opacity: 0;
+        animation: scroll 3s linear 5s forwards;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+    10% {
+        opacity: 1;
+        top: -100px;
+    }
+    11% {
+        top: -70px;
+    }
+    20% {
+        top: -70px;
+    }
+    21% {
+        top: -40px;
+    }
+    30% {
+        top: -40px;
+    }
+    31% {
+        top: -70px;
+    }
+    40% {
+        top: -70px;
+    }
+    41% {
+        top: -40px;
+    }
+    50% {
+        top: -40px;
+    }
+    51% {
+        top: -70px;
+    }
+    60% {
+        top: -70px;
+    }
+    61% {
+        top: -100px;
+    }
+    70% {
+        top: -100px;
+    }
+    100% {
+        opacity: 0;
+    }
 }
