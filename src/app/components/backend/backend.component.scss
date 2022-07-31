@@ -51,6 +51,18 @@ h2 {
     grid-template-rows: 1fr 3fr;
 }
 
+.secure {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.padlock {
+    display: none;
+}
+
 @media screen and (min-width: 40em) {
     .container-backend {
         display: grid;
@@ -59,5 +71,17 @@ h2 {
         margin: auto;
         grid-template-rows: 100px 1fr 30px;
         padding: 10px;
+    }
+    .secure {
+        height: 200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .padlock {
+        display: block;
+        height: 200px;
     }
 }

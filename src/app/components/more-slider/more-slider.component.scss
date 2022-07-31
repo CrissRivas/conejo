@@ -1,0 +1,39 @@
+.more-slider-container {
+    display: none;
+}
+
+@media screen and (min-width: 40em) {
+    .banner {
+        width: 800px;
+        height: 350px;
+        color: black;
+        --swiper-theme-color: #000000;
+    }
+    .more-slider-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+    }
+    .learing {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+    }
+    .learing section h1 {
+        text-align: center;
+    }
+    .course {
+        height: 250px;
+        width: 400px;
+        display: grid;
+        grid-template-rows: 50px 200px;
+        text-align: center;
+        align-items: center;
+        margin: 0px auto;
+        border: 3px solid var(--G-5);
+        box-shadow: 2px 2px var(--G-3);
+    }
+}

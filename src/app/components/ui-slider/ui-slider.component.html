@@ -1,108 +1,110 @@
-<swiper class="swiper banner" [loop]="true" [slidesPerView]="2" [spaceBetween]="50">
+<div class="ui-slider-container">
+    <swiper class="swiper banner" [allowTouchMove]="false" [keyboard]="true" [loop]="true" [slidesPerView]="1" [spaceBetween]="50" [navigation]="true">
 
-    <!-- conejo-cyberpunk -->
-    <ng-template swiperSlide class="swiper-slide">
+        <!-- conejo-cyberpunk -->
+        <ng-template swiperSlide class="swiper-slide">
 
-        <div class="page" [class.page-bar-button]="conejoButton">
-            <div class="bar">
-                <section></section>
-                <section class="x">_ox</section>
-            </div>
-            <a href="https://www.conejo-cyberpunk.xyz" target="_blank">
-                <div class="url">
-
-                    <h2>conejo-cyberpunk.xyz</h2>
-
+            <div class="page" [class.page-bar-button]="conejoButton">
+                <div class="bar">
+                    <section></section>
+                    <section class="x">_ox</section>
                 </div>
-            </a>
-            <div class="info">
-                <p class="page-info-description" [class.page-info-description-visible]="conejoButton" [class.page-info-description-invisible]="!conejoButton">
-                    You are here, please enjoy the cookies and the UI.
-                </p>
-                <div class="tags">
-                    <div class="tag">
-                        <p>•All</p>
+                <a href="https://www.conejo-cyberpunk.xyz" target="_blank">
+                    <div class="url">
+
+                        <h2>conejo-cyberpunk.xyz</h2>
 
                     </div>
-                    <section>
-                        <button class="page-info-arrow" (click)="tgglCnjo()" [class.page-info-up-arrow]="conejoButton">
+                </a>
+                <div class="info">
+                    <p class="page-info-description" [class.page-info-description-visible]="conejoButton" [class.page-info-description-invisible]="!conejoButton">
+                        You are here, please enjoy the cookies and the UI.
+                    </p>
+                    <div class="tags">
+                        <div class="tag">
+                            <p>•All</p>
+
+                        </div>
+                        <section>
+                            <button class="page-info-arrow" (click)="tgglCnjo()" [class.page-info-up-arrow]="conejoButton">
                    >
                 </button>
-                    </section>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
-    </ng-template>
-    <!-- conejo-cyberpunk -->
+        </ng-template>
+        <!-- conejo-cyberpunk -->
 
-    <!-- Gubs -->
-    <ng-template swiperSlide class="swiper-slide">
+        <!-- Gubs -->
+        <ng-template swiperSlide class="swiper-slide">
 
-        <div class="page" [class.page-bar-button]="Gubs">
-            <div class="bar">
-                <section></section>
-                <section class="x">_ox</section>
-            </div>
-            <a href="https://www.epicfarmers.live" target="_blank">
-                <div class="url">
-
-                    <h2>epicfarmers.live</h2>
-
+            <div class="page" [class.page-bar-button]="Gubs">
+                <div class="bar">
+                    <section></section>
+                    <section class="x">_ox</section>
                 </div>
-            </a>
-            <div class="info">
-                <p class="page-info-description" [class.page-info-description-visible]="Gubs" [class.page-info-description-invisible]="!Gubs">
-                    A Fresh prototipe for a potato chips brand
-                </p>
-                <div class="tags">
-                    <div class="tag">
-                        <p>•Animations</p>
+                <a href="https://www.epicfarmers.live" target="_blank">
+                    <div class="url">
+
+                        <h2>epicfarmers.live</h2>
 
                     </div>
-                    <section>
-                        <button class="page-info-arrow" (click)="tgglGubs()" [class.page-info-up-arrow]="Gubs">
+                </a>
+                <div class="info">
+                    <p class="page-info-description" [class.page-info-description-visible]="Gubs" [class.page-info-description-invisible]="!Gubs">
+                        A Fresh prototipe for a potato chips brand
+                    </p>
+                    <div class="tags">
+                        <div class="tag">
+                            <p>•Animations</p>
+
+                        </div>
+                        <section>
+                            <button class="page-info-arrow" (click)="tgglGubs()" [class.page-info-up-arrow]="Gubs">
                  >
               </button>
-                    </section>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
-    </ng-template>
-    <!-- Gubs -->
-    <!-- Weedtopia -->
+        </ng-template>
+        <!-- Gubs -->
+        <!-- Weedtopia -->
 
-    <ng-template swiperSlide class="swiper-slide">
+        <ng-template swiperSlide class="swiper-slide">
 
-        <div class="page" [class.page-bar-button]="weed">
-            <div class="bar">
-                <section></section>
-                <section class="x">_ox</section>
-            </div>
-            <a href="https://www.weedtopia.club" target="_blank">
-                <div class="url">
-
-                    <h2>weedtopia.club</h2>
-
+            <div class="page" [class.page-bar-button]="weed">
+                <div class="bar">
+                    <section></section>
+                    <section class="x">_ox</section>
                 </div>
-            </a>
-            <div class="info">
-                <p class="page-info-description" [class.page-info-description-visible]="weed" [class.page-info-description-invisible]="!weed">
-                    Slim design for a crypto project
-                </p>
-                <div class="tags">
-                    <div class="tag">
-                        <p>•Colors</p>
+                <a href="https://www.weedtopia.club" target="_blank">
+                    <div class="url">
+
+                        <h2>weedtopia.club</h2>
 
                     </div>
-                    <section>
-                        <button class="page-info-arrow" (click)="tgglWeed()" [class.page-info-up-arrow]="weed">
+                </a>
+                <div class="info">
+                    <p class="page-info-description" [class.page-info-description-visible]="weed" [class.page-info-description-invisible]="!weed">
+                        Slim design for a crypto project
+                    </p>
+                    <div class="tags">
+                        <div class="tag">
+                            <p>•Colors</p>
+
+                        </div>
+                        <section>
+                            <button class="page-info-arrow" (click)="tgglWeed()" [class.page-info-up-arrow]="weed">
                >
             </button>
-                    </section>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
-    </ng-template>
-    <!-- Weedtopia -->
-    <div class="swiper-pagination"></div>
-</swiper>
+        </ng-template>
+        <!-- Weedtopia -->
+        <div class="swiper-pagination"></div>
+    </swiper>
+</div>

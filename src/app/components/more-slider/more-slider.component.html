@@ -1,0 +1,24 @@
+<div class="more-slider-container">
+    <div class="learing">
+        <section>
+            <h1> Learning <br> & <br> Exploring</h1>
+        </section>
+        <section>
+            <p>Passion for learning new skills and develop awsome software, all in diferents fields. <br> &nbsp;<br> My favorite plataform to learn is Platzi, currently i've 46 cetificed couses and more than 10,500 points. <br> &nbsp;<br>My aproved couses:</p>
+        </section>
+    </div>
+    <div class="slider">
+        <swiper class="swiper banner" [allowTouchMove]="false" [keyboard]="true" [loop]="true" [slidesPerView]="1" [spaceBetween]="50" [navigation]="true">
+            <ng-template swiperSlide class="swiper-slide" *ngFor="let couse of courses; index as i">
+                <div class="course">
+                    <section>
+                        <h1>#{{i}}</h1>
+                    </section>
+                    <section>
+                        <h1>{{couse}}</h1>
+                    </section>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+</div>

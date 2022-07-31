@@ -25,6 +25,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { UiSliderComponent } from './components/ui-slider/ui-slider.component';
+import { MoreSliderComponent } from './components/more-slider/more-slider.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { UiSliderComponent } from './components/ui-slider/ui-slider.component';
     MenuComponent,
     SliderComponent,
     ContactComponent,
-    UiSliderComponent
+    UiSliderComponent,
+    MoreSliderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Swiper, { Navigation } from 'swiper';
+
 
 @Component({
   selector: 'app-ui-slider',
@@ -13,7 +15,10 @@ export class UiSliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+Swiper.use([Navigation]);
   }
+
+
   tgglCnjo():void{
     this.conejoButton=!this.conejoButton;
   }
