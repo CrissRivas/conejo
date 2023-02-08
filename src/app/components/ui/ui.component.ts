@@ -9,6 +9,7 @@ export class UiComponent implements OnInit {
   public conejoButton:boolean=false;
   public Gubs:boolean=false;
   public weed:boolean=false;
+  public reto:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
@@ -21,5 +22,8 @@ export class UiComponent implements OnInit {
   }
   tgglWeed():void{
     this.weed=!this.weed;
+  }
+  tgglReto():void{
+    this.reto=!this.reto;
   }
 }

@@ -12,6 +12,8 @@ export class UiSliderComponent implements OnInit {
   public conejoButton:boolean=false;
   public Gubs:boolean=false;
   public weed:boolean=false;
+  public reto:boolean=false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -28,5 +30,7 @@ Swiper.use([Navigation]);
   tgglWeed():void{
     this.weed=!this.weed;
   }
-
+  tgglReto():void{
+    this.reto=!this.reto;
+  }
 }

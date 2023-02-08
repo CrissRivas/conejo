@@ -105,6 +105,40 @@
             </div>
         </ng-template>
         <!-- Weedtopia -->
+
+        <!-- Reto -->
+        <ng-template swiperSlide class="swiper-slide">
+        <div class="page" [class.page-bar-button]="reto">
+            <div class="bar">
+                <section></section>
+                <section class="x">_ox</section>
+            </div>
+            <a href="https://reto.conejo-cyberpunk.xyz" target="_blank">
+                <div class="url">
+
+                    <h2>Task Manager</h2>
+
+                </div>
+            </a>
+            <div class="info">
+                <p class="page-info-description" [class.page-info-description-visible]="reto" [class.page-info-description-invisible]="!reto">
+                    Nice task manager made with Nuxt.js
+                </p>
+                <div class="tags">
+                    <div class="tag">
+                        <p>•Vue.js</p>
+
+                    </div>
+                    <section>
+                        <button class="page-info-arrow" (click)="tgglReto()" [class.page-info-up-arrow]="reto">
+                         >
+                      </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+        <!-- Weedtopia -->
         <div class="swiper-pagination"></div>
     </swiper>
 </div>
